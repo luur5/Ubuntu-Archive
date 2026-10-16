@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="stories-hero">
+
+    <h1>Africa's Living Stories</h1>
+
+    <p>
+        Discover timeless African folktales, legends and oral histories
+        preserved through the Ubuntu Archive for future generations.
+    </p>
+
+</section>
+
+
+<section class="featured">
+
+    <div class="story-container">
+
+        <!-- Lion and Hare -->
+        <div class="story-card">
+
+            <img src="{{ url_for('static', filename='images/lion.png') }}"
+                 alt="The Lion and the Hare">
+
+            <h3>The Lion and the Hare</h3>
+
+            <p>
+                A traditional African folktale about wisdom, intelligence,
+                and courage.
+            </p>
+
+            <a href="/stories/lion">
+                <button>Read Story</button>
+            </a>
+
+        </div>
+
+
+        <!-- Rain Queen -->
+        <div class="story-card">
+
+            <img src="{{ url_for('static', filename='images/rainqueen.png') }}"
+                 alt="The Rain Queen">
+
+            <h3>The Rain Queen</h3>
+
+            <p>
+                Learn about the legendary Balobedu Rain Queen and her
+                connection to African history.
+            </p>
+
+            <button>Read Story</button>
+
+        </div>
+
+
+        <!-- Baobab Tree -->
+        <div class="story-card">
+
+            <img src="{{ url_for('static', filename='images/baobab.png') }}"
+                 alt="The Baobab Tree">
+
+            <h3>The Baobab Tree</h3>
+
+            <p>
+                Discover why the Baobab tree is called the Tree of Life
+                across Africa.
+            </p>
+
+            <button>Read Story</button>
+
+        </div>
+
+
+        <!-- Anansi -->
+        <div class="story-card">
+
+            <img src="{{ url_for('static', filename='images/anansi.png') }}"
+                 alt="Anansi the Spider">
+
+            <h3>Anansi the Spider</h3>
+
+            <p>
+                Read the adventures of Anansi, the famous trickster from
+                West African folklore.
+            </p>
+
+            <button>Read Story</button>
+
+        </div>
+
+
+        <!-- Elephant and Tortoise -->
+        <div class="story-card">
+
+            <img src="{{ url_for('static', filename='images/elephant.png') }}"
+                 alt="The Elephant and the Tortoise">
+
+            <h3>The Elephant and the Tortoise</h3>
+
+            <p>
+                A story about patience, wisdom and friendship.
+            </p>
+
+           <a href="/stories/rainqueen">
+    <button>Read Story</button>
+</a>
+
+        </div>
+
+
+        <!-- Zulu Warrior -->
+        <div class="story-card">
+
+            <img src="{{ url_for('static', filename='images/zulu.png') }}"
+                 alt="The Zulu Warrior">
+
+            <h3>The Zulu Warrior</h3>
+
+            <p>
+                Explore stories of courage and leadership from Southern
+                Africa.
+            </p>
+
+            <button>Read Story</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

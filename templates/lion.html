@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="story-page">
+
+    <h1>The Lion and the Hare</h1>
+
+    <img src="{{ url_for('static', filename='images/lion.png') }}"
+         alt="The Lion and the Hare">
+
+    <p>
+        A traditional African folktale about wisdom, intelligence, and courage.
+    </p>
+
+    <p>
+        Once upon a time, a powerful lion ruled over the animals in the forest.
+        The lion was feared by everyone because of his strength and size.
+        However, a clever little hare was not easily frightened.
+    </p>
+
+    <p>
+        The hare used his intelligence to outsmart the lion and showed that
+        wisdom can sometimes be more powerful than physical strength.
+    </p>
+
+    <h2>Moral of the Story</h2>
+
+    <p>
+        Intelligence, courage, and wisdom can overcome even the greatest challenges.
+    </p>
+
+</section>
+
+{% endblock %}
